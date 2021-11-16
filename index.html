@@ -5,30 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F2E-Week1</title>
-    <!-- Bootstrap CSS 4.6.1 -->
-    <link href="/week1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS 4.6.1 -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Style -->
+  <link href="/css/style.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
 
 <style>
-  html{
+  html {
     font-family: 'Noto Sans TC', sans-serif;
     color:#000;
-    }
-  .indexBanner {
-    width:100%;
-    height:70vh;
-    background-position: center;
-    background-image: url(/week1/images/IndexBanner.png);
-  }
-  .linearRound {
-    background-image: linear-gradient(160deg, #78E389, #1EB893);
   }
 
+  body {
+    height:100%;
+  }
 
-
+  footer {
+    height: 210px;
+    background-color: rgb(49, 49, 49);
+  }
 </style>
 
 </head>
@@ -36,7 +35,7 @@
   
   <nav class="navbar navbar-light">
     <a class="navbar-brand" href="#">
-      <img src="/week1/images/logo1.svg" width="131" height="33" alt="TaiwanGo Logo">
+      <img src="/images/logo1.svg" width="131" height="33" alt="TaiwanGo Logo">
     </a>
   
     <ul class="nav justify-content-center text-black">
@@ -51,36 +50,72 @@
       </li>
     </ul>
 
-
-    <form class="form-inline rounded-pill border border-secondary px-3">
+    <form class="form-inline rounded-pill px-3 inputBorderS">
       <div class="input-group">
         <input type="text" style="border: transparent;" size="10" placeholder="搜尋關鍵字" aria-label="搜尋關鍵字" aria-describedby="button-search">
         <div class="input-group-append">
           <div type="button" id="button-search">
-            <img src="/week1/images/search-icon1.svg" width="19" height="39" alt="search button">
+            <img src="/images/search-icon1.svg" width="19" height="39" alt="search button">
           </div>
         </div>
       </div>
     </form>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid indexBanner">
-    <div class="container">
-      <div class="text-white">
-        <h1 class="text-center">想去哪裡玩</h1>
-        <p class="text-center">這裡共有上千個活動及美食等你來體驗</p>  
-      </div>
+</nav>
 
-      <div class="form-inline rounded-pill border border-secondary bg-white w-50 mx-auto pl-3 pr-1">
+  <div class="indexBanner">
+    <div class="container">
+      <div class="text-white inedxBannerHead">
+        <h1 class="text-center">想去哪裡玩?</h1>
+        <p class="text-center">這裡共有上千個活動及美食等你來體驗</p>  
+      </div><!-- End of .indexBannerHead -->
+      <div class="form-inline rounded-pill bg-white w-50 mx-auto pl-3 pr-1 inputBorderL">
         <input class="col" type="text" style="border: transparent;" placeholder="新北耶誕城" aria-label="搜尋關鍵字" aria-describedby="button-search">
         <div class="rounded-pill my-1 linearRound text-white font-weight-bold px-2">
-          <img src="/week1/images/search-icon1.svg" width="19" height="39" alt="search button">
+          <img src="/images/search-icon1.svg" width="19" height="39" alt="search button">
           <span>搜尋</span>
         </div>
-      </div>
-    </div>
-  </div>
+      </div><!-- End of .form-inline -->
+    </div><!-- End of .container -->
+  </div><!-- End of .indexBanner -->
 
+<div class="mainContent">
+
+  <div class="cityLinkBar">
+    <div class="cityLinkHead">
+      <strong>縣市快選</strong><br/>
+      <span>CHOOSE CITIES</span>
+    </div>
+    <!-- <div class="cityLinkBox"> -->
+      <div class="cityLink">
+        <div class="cityBall"></div>
+        <span>北部</span>
+      </div>
+      <div class="cityLink">
+        <div class="cityBall"></div>
+        <span>中部</span>
+      </div>
+      <div class="cityLink">
+        <div class="cityBall"></div>
+        <span>南部</span>
+      </div>
+      <div class="cityLink">
+        <div class="cityBall"></div>
+        <span>東部</span>
+      </div>
+      <div class="cityLink">
+        <div class="cityBall"></div>
+        <span>離島</span>
+      </div>  
+    <!--</div>  CityLinkBox -->
+  </div> <!-- .cityLinkBar -->
+
+</div> <!-- End of .mainContent -->
+
+<footer>
+
+</footer>
 
 </body>
 </html>
